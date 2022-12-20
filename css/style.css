@@ -26,7 +26,7 @@ body {
     color: var(--primary-text) !important;
 }
 
-.navbar-brand span, .hero-name span, .about-me-text span, .work-text span, .contact-text span{
+.navbar-brand span, .hero-name span, .about-me-text span, .work-text span, .contact-text span, .skills-text span{
     color: var(--feature-color);
 }
 
@@ -74,7 +74,7 @@ body {
     justify-content: flex-start !important;
 }
 
-.hero-welcome-text, .about-me-text p, .work-text p, .card-text, .contact-text p {
+.hero-welcome-text, .about-me-text p, .work-text p, .card-text, .contact-text p, .skills-text li {
     color: var(--secondary-text);
 }
 
@@ -85,6 +85,19 @@ body {
 .about-image {
 max-width: 75%;
 max-height: auto;
+}
+
+#skills ul {
+    list-style: none !important;
+}
+
+#skills ul li::before {
+    content: "\2022";
+    color: var(--primary-text) !important;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }
 
 .cardContainer {
@@ -158,6 +171,7 @@ max-height: auto;
 
 @media  (max-width: 992px) {
     #navbarNav .nav-button {
+    margin: 0px;
     background-color: var(--background-mid);
     color: var(--primary-text);
     text-decoration: none;
