@@ -1,0 +1,178 @@
+:root {
+    --primary-text: #eee;
+    --secondary-text: #fcfc;
+    --feature-color: #ff0f7b;
+    --background-dark: #222;
+    --background-mid: #333;
+    --background-light: #444;
+}
+
+html {
+    overflow: scroll !important;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: var(--primary-text) !important;
+    background-color: var(--background-dark);
+}
+
+.navbar, #work{
+    background-color: var(--background-mid) !important;
+}       
+
+.navbar-brand, .navbar-nav a, .navbar-light, .navbar-toggler-icon {
+    color: var(--primary-text) !important;
+}
+
+.navbar-brand span, .hero-name span, .about-me-text span, .work-text span, .contact-text span{
+    color: var(--feature-color);
+}
+
+.navbar-nav a {
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.navbar-nav a:hover {
+    color: var(--feature-color) !important;
+    transition: .4s !important;
+}
+
+.nav-button {
+    margin-left: 5px;
+    background-color: var(--feature-color);
+    color: var(--primary-text);
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: transform .4s; 
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 1px solid var(--feature-color);
+    cursor: pointer;
+}
+
+.jumbotron {
+        background-image: url(path/to/img.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.hero-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+.hero-welcome-text, .about-me-text p, .work-text p, .card-text, .contact-text p {
+    color: var(--secondary-text);
+}
+
+.about, .about-me, #contact {
+    background-color: var(--background-dark) !important;
+}
+
+.about-image {
+max-width: 75%;
+max-height: auto;
+}
+
+.cardContainer {
+    padding: 20px;
+}
+
+.card-body {
+    background-color: var(--background-mid);
+}
+
+.featured-color {
+    color: var(--feature-color);
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-text, .work-text {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-details a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  var(--feature-color);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contact-details a:hover{
+    transition: .4s;
+    transform: scale(1.3);
+    background-color: transparent;
+    border: 2px solid var(--feature-color);
+    cursor: pointer;
+}
+
+.footer-copyright {
+    color: var(--primary-text) !important;
+}
+
+.button {
+    background-color: var(--feature-color);
+    color: var(--primary-text);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s; 
+    font-size: 18px;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid var(--feature-color);
+    cursor: pointer;
+}
+
+@media  (max-width: 992px) {
+    #navbarNav .nav-button {
+    background-color: var(--background-mid);
+    color: var(--primary-text);
+    text-decoration: none;
+    border: none;
+    font-weight: normal;
+    border-radius: none;
+    transition: transform .0s; 
+}
+
+#navbarNav .nav-button:hover {
+    transform: scale(1);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--feature-color) !important;
+    transition: .0s !important;
+}
+}
