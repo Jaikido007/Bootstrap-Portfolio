@@ -59,6 +59,11 @@ body {
     cursor: pointer;
 }
 
+.navbar-toggler:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
 .jumbotron {
         background-image: url(path/to/img.jpg);
         background-attachment: fixed;
